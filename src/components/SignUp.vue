@@ -1,13 +1,14 @@
 <template>
-    <img class="logo" src="../assets/Restaurant.png" alt="restro-logo">
-    <h1>Sign Up</h1>
+   <NavBar/>
+    
 
     <div class="register">
+        <h1>Sign Up</h1>
         <input type="text" placeholder="Enter your name" v-model="name">
         <input type="text" placeholder="Enter your Email" v-model="email">
         <input type="password" placeholder="Enter your password" v-model="password">
 
-        <button v-on:click="signup">Sign Up</button>
+        <button  v-on:click="signup" class="btn">Sign Up</button>
 
     </div>
 
@@ -15,6 +16,7 @@
 
 <script>
 import axios from 'axios'
+import NavBar from './NavBar.vue';
 export default {
     name: "SignUp",
     data() {
@@ -32,20 +34,20 @@ export default {
                 password: this.password
             });
             if (result.status == 201) {
-                localStorage.setItem("user-info",JSON.stringify(result.data))
-                this.$router.push({name:'Home'})
+                // localStorage.setItem("user-info",JSON.stringify(result.data))
+                this.$router.push({name:'Login'})
             }
             
         }
+    },
+    components: {
+        NavBar
     }
 }
 </script>
 
-<style>
-.logo{
-    widows: 100px;
-    height: 100px;
-}
+<style scoped>
+
 .register input{
     width: 300px;
     height: 40px;
@@ -69,5 +71,8 @@ export default {
     
 }
 
+.btn{
+    margin-left: 40%;
+}
 
 </style>

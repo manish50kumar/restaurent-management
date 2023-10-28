@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "name": "manish kumar",
+      "email": "mk@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "peter",
+      "email": "peter@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "name": "manish kumar",
+      "email": "man@123gmail.com",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "name": "def",
+      "email": "def@gmail.com",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "name": "xyz",
+      "email": "xyz@gmail.com",
+      "password": "1234",
+      "id": 8
+    },
+    {
+      "name": "harh",
+      "email": "harh@gmail.com",
+      "password": "1234",
+      "id": 9
+    }
+  ],
+  "restarurent": [
+    {
+      "name": "Dominos pizza",
+      "address": "dehradun",
+      "contact": 888888,
+      "id": 2
+    },
+    {
+      "name": "Bihari Chicken",
+      "address": "Patna",
+      "contact": "66666666",
+      "id": 3
+    }
+  ]
+}
